@@ -22,3 +22,12 @@ sass.render({
     console.log({"err": err});
   }
 });
+
+app.use(express.static(__dirname + '/www'));
+app.set('views', __dirname + '/www');
+app.engine('html', require('ejs').renderFile);
+
+var standardServer = http.createServer(app);
+standardServer.listen(process.env.PORT || 5000,function (){
+    console.log('HTTP Server on');
+});
