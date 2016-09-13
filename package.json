@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "a social, rating and reviewing website for anime",
   "main": "app.js",
+  "watches": {
+    "sass": "sass/**"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/vemuez/anime-web-app/issues"
   },
-  "homepage": "https://github.com/vemuez/anime-web-app#readme"
+  "homepage": "https://github.com/vemuez/anime-web-app#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "node-sass": "^3.9.3",
+    "rerun-script": "^0.6.0"
+  }
 }
