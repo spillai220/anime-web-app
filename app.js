@@ -15,7 +15,7 @@ sass.render({
   outputStyle: 'compressed'
 }, function(err, result) {
   if (!err){
-    fs.writeFile('www/css/style.min.css', result.css, function(err){
+    fs.writeFile('public/css/style.min.css', result.css, function(err){
       console.log((err)? {"err": err} : {"success": "css compiled and written on disk"});
     });
   } else {

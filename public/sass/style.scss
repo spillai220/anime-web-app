@@ -1,3 +1,5 @@
+@import 'reset.scss';
+
 $ranimeDarkBlue: #00171F;
 $ranimeLightBlue: #003459; //007EA7
 $ranimeWhite: #FFFFFF;
@@ -10,7 +12,10 @@ header {
   nav {
     width:100%;
     height:60px;
-    color: $ranimeDarkBlue;
+    background-color:$ranimeDarkBlue;
+    h1 {
+      color: $ranimeWhite;
+    }
   }
 }
 
