@@ -20,11 +20,11 @@
   },
   "homepage": "https://github.com/vemuez/anime-web-app#readme",
   "dependencies": {
-    "ejs": "^2.5.2",
-    "express": "^4.14.0",
+    "ejs": "2.5.2",
+    "express": "4.14.0",
     "fs": "0.0.1-security",
-    "mongodb": "^2.2.9",
-    "node-sass": "^3.9.3",
-    "rerun-script": "^0.6.0"
+    "mongodb": "2.2.9",
+    "node-sass": "3.9.3",
+    "rerun-script": "0.6.0"
   }
 }

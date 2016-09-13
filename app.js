@@ -23,9 +23,11 @@ sass.render({
   }
 });
 
+//View engine setup
 app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/public');
-app.engine('html', require('ejs').renderFile);
+app.engine('html', require('ejs').renderFile); //all html to be rendered using ejs node module
+
 
 var standardServer = http.createServer(app);
 standardServer.listen(process.env.PORT || 5000,function (){
