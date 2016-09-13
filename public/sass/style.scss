@@ -3,10 +3,10 @@
 $ranimeDarkBlue: #00171F;
 $ranimeLightBlue: #003459; //007EA7
 $ranimeWhite: #FFFFFF;
-$ranimeFontTitle: ;
 
 $headerHeight: 60px;
 $logoHeight: 30px;
+$searchBarHeight: 35px;
 
 body {
 
@@ -14,18 +14,29 @@ body {
 
 header {
   nav {
-    padding:0 10px 0 0;
+    position:fixed;
+    padding:0 5px 0 0;
     width:100%;
     height:$headerHeight;
     line-height:$headerHeight;
     background-color:$ranimeDarkBlue;
     img {
-      margin-top:($headerHeight - $logoHeight)/2; //edit this
+      min-width:160px;
+      min-height:30px;
+      margin-top:($headerHeight - $logoHeight)/2;
+      margin-bottom:($headerHeight - $logoHeight)/2;
+      margin-left:-50px;
+      float:left;
+      display:block-inline;
     }
-    ul {
-      //Unorder Lists
-      li {
-        //lists
+    form {
+      position:absolute;
+      float:right;
+      left:120px;
+      right:20px;
+      input[type="text"] {
+        width:100%;
+        height:$searchBarHeight;
       }
     }
   }
