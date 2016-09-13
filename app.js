@@ -10,8 +10,8 @@ var mongoClient = mongodb.MongoClient;
 var ObjectID = mongodb.ObjectID;
 
 sass.render({
-  file: 'www/sass/style.scss',
-  outFile: 'www/css/style.min.css',
+  file: 'public/sass/style.scss',
+  outFile: 'public/css/style.min.css',
   outputStyle: 'compressed'
 }, function(err, result) {
   if (!err){
@@ -23,8 +23,8 @@ sass.render({
   }
 });
 
-app.use(express.static(__dirname + '/www'));
-app.set('views', __dirname + '/www');
+app.use(express.static(__dirname + '/public'));
+app.set('views', __dirname + '/public');
 app.engine('html', require('ejs').renderFile);
 
 var standardServer = http.createServer(app);
