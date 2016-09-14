@@ -8,6 +8,8 @@ $headerHeight: 60px;
 $logoHeight: 30px;
 $searchBarHeight: 35px;
 
+$sliderHeight: 200px;
+
 body {
 
 }
@@ -44,8 +46,17 @@ header {
 }
 
 main {
-  section
-
+  position:relative;
+  top:$headerHeight;
+  section#slider{
+    height:$sliderHeight;
+    overflow-y:hidden;
+    width:100%;
+  }
+  .carousel-inner > .item > img {
+    width:100%;
+    margin:auto;
+  }
 }
 
 // .carousel-inner > .item > img,
