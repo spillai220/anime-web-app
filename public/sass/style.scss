@@ -33,9 +33,10 @@ header {
       position:absolute;
       float:right;
       left:120px;
-      right:20px;
+      right:30px;
       input[type="text"] {
         width:100%;
+        padding-left: 10px;
         height:$searchBarHeight;
       }
     }
